@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    --main-color: #ce0e2d;
+    --minor-color: #f6d4d9;
+    --font-main: 'Abril Fatface';
+    --font-minor: 'Cormorant Garamond';
+}
+@font-face {
+    font-family: 'Abril Fatface';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/abrilfatface/v19/zOL64pLDlL1D99S8g8PtiKchq-dmjQ.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/cormorantgaramond/v16/co3bmX5slCNuHLi8bLeY9MK7whWMhyjYqXtK.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+body {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Nav bar*/
+nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    position: static;
+    background-color: var(--main-color);
+    color: white;
+    line-height: 0.5;
+    font-family: var(--font-main);
+    padding: 10px 0px;
+}
+
+.logo-box {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    align-items: center;
+}
+
+.logo {
+    position: relative;
+    background-color: white;
+    width: fit-content;
+    height: 50px;
+    border-radius: 40px;
+    padding-top: 2px;
+    margin-left: 10px;
+}
+
+.logo img {
+    width: 50px;
+}
+
+.logo-text {
+    margin: 20px 0px 20px 0px;
+    font-size: 14px;
+}
+
+nav h1 {
+    padding-left: 5px;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.nav-list > li {
+    list-style: none;
+    margin: 20px;
+    text-decoration: none;
+    text-shadow: -3px 3px black;
+}
+
+ul a:hover {
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+ul a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Main content*/
+.background-container {
+    display: flex;
+    justify-content: center;
+    background-image: url('../resources/images/800px-Standish_Methodist_Church.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    align-content: center;
+    background-size: auto;
+    padding: 150px 0px;
+    opacity: 0.8;
+    margin: 90px 0px;
+
+}
+
+.background {
+    padding: 20px 60px;
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--minor-color);
+    opacity: 0.6;
+}
+
+.background h1 {
+    font-size: 50px;
+    font-family: 'Abril Fatface';
+    opacity: 1;
+}
+
+.background h2 { 
+    font-size: 30px;
+    font-family: 'Cormorant Garamond';
+
+}
+
+.background p {
+    font-family: 'Cormorant Garamond';
+}
+
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: var(--main-color);
+    color: white;
+    font-family: var(--font-main);
+}
+
+footer div {
+    margin: 10px 20px;
+    padding-bottom: 10px;
+}
+
+footer h3 {
+    text-decoration: underline;
+    text-shadow: -3px 3px black;
+    width: 200px;
+}
+
+footer p {
+    font-family: var(--font-minor);
+}

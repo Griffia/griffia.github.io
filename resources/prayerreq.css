@@ -1,0 +1,37 @@
+.main-content-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-repeat: no-repeat;
+    background-image: url(./images/open-bible.jpg);
+    background-size: contain;
+    background-position: center;
+    margin: 30px 0px;
+}
+
+.content-container {
+    width: 300px;
+    margin: 50px 40px;
+    border: 2px solid black;
+    padding: 5px 10px ;
+    border-radius: 10px;
+    background-color: var(--minor-color);
+    opacity: 0.9;
+}
+
+.content-container h1 {
+    margin: 5px 0px;
+    font-family: var(--font-main);
+    text-decoration: underline;
+}
+
+.content-container p {
+    font-family: var(--font-minor);
+}
+
+.contact-details {
+    margin: 10px 0px;
+    font-weight: bold;
+    font-family: var(--font-main);
+}

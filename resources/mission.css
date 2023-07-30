@@ -1,0 +1,58 @@
+.our-mission {
+    display: flex;
+    justify-content: center;
+
+}
+.our-mission-container {
+    width: 400px;
+    margin: 20px;
+}
+.our-mission-container h1 {
+    text-align: center;
+    font-family: var(--font-main);
+}
+
+.our-mission-container p {
+    font-family: var(--font-minor);
+}
+.mission-statements{
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+}
+.image-containers {
+    width: 200px;
+    height: 133px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.mission-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    height: 300px;
+    width: 200px;
+    margin: 30px 20px;
+    padding: 5px;
+    border: 2px solid var(--main-color);
+    border-radius: 15px;
+    background-color: var(--minor-color);
+}
+.mission-container h2 {
+    font-size: 26px;
+    padding: 10px 0;
+    font-family: var(--font-main);
+    text-decoration: underline;
+}
+.mission-container p {
+    font-size: 14px;
+    padding: 5px 0;
+    font-family: var(--font-minor);
+}
+#bible-reference {
+    font-weight: bold;
+}
