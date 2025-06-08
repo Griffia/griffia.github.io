@@ -1,0 +1,48 @@
+.hall-event {
+    display: flex;
+    /* margin: 0px 0px 0px 30px; */
+    padding: 10px 30px;
+    user-select: none;
+}
+
+.hall-event h2 {
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+.day-of-week {
+    width: 150px;
+}
+
+.hall-event-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 20px;
+    border: 3px solid white;
+    border-radius: 5px;
+    padding: 5px;
+    text-align: center;
+    width: 120px;
+    height: 60px;
+}
+
+.hall-event-details:hover {
+    cursor: pointer;
+    color: gold;
+    border: 3px solid gold;
+    border-radius: 5px;
+}
+
+.hall-event-details h3 {
+    font-size: 14px;
+}
+
+.hall-event-details h4 {
+    font-size: 12px;
+}
+
+.hall-event-details p {
+    font-size: 10px;
+}

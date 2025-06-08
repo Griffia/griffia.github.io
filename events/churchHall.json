@@ -1,0 +1,124 @@
+{
+    "Monday": [
+        {
+            "event": "Dance Like a Mother",
+            "location": "Main Hall",
+            "time": "10:00 - 11:00",
+            "description" : "Learn to dance like a mother in a room.",
+            "contact" : "dancewithme@gmail.com"
+        },
+        {
+            "event": "Luncheon Club",
+            "location": "Main Hall",
+            "time": "11:30 - 13:45",
+            "description" : "Enjoy a lunch with other like minded people",
+            "contact" : "luncheon@gmail.com"
+        },
+        {
+            "event": "Beavers, Cubs & Scouts",
+            "location": "Main Hall",
+            "time": "18:00 - 22:00",
+            "description" : "Take part in a variety of different activites",
+            "contact" : "beaver@gmail.com"
+        }
+    ],
+
+    "Tuesday": [
+        {
+            "event": "Rainbows & Brownies",
+            "location": "Back Hall",
+            "time": "17:30 - 18:45",
+            "description" : "lorem",
+            "contact" : "test@gmail.com"
+        },
+        {
+            "event": "Rangers",
+            "location": "Main Hall",
+            "time": "20:15 - 21:30",
+            "description" : "lorem",
+            "contact" : "test@gmail.com"
+        }
+    ],
+
+    "Wednesday": [
+        {
+            "event": "Soultown Aerobics",
+            "location": "Main Hall",
+            "time": "09:30 - 11:00",
+            "description" : "lorem",
+            "contact" : "test@gmail.com"
+        },
+        {
+            "event": "Share & Grow",
+            "location": "Church",
+            "time": "10:00 - 11:00",
+            "description" : "lorem",
+            "contact" : "test@gmail.com"
+        },
+        {
+            "event": "Standish Table Tennis Club",
+            "location": "Both Halls",
+            "time": "19:00 - 22:30",
+            "description" : "lorem",
+            "contact" : "test@gmail.com"
+        },
+        {
+            "event": "Prospect Brass Band Practice",
+            "location": "Church Hall",
+            "time": "19:30 - 22:00", 
+            "description" : "lorem",
+            "contact" : "test@gmail.com"
+        }
+    ],
+
+    "Thursday": [
+        {
+            "event": "Coffe Morning",
+            "location": "Main Hall",
+            "time": "10:30 - 12:00",
+            "description" : "lorem",
+            "contact" : "test@gmail.com"
+        },
+        {
+            "event": "Tai-chi",
+            "location": "Back Hall",
+            "time": "09:30 - 11:15",
+            "description" : "lorem",
+            "contact" : "test@gmail.com"
+        },
+        {
+            "event": "Fitness Group",
+            "location": "Main Hall",
+            "time": "18:00 - 19:00",
+            "description" : "lorem",
+            "contact" : "test@gmail.com"
+        },
+        {
+            "event": "Guides",
+            "location": "Back Hall",
+            "time": "19:00 - 20:30",
+            "description" : "lorem",
+            "contact" : "test@gmail.com"
+        }
+    ],
+
+    "Friday": [
+        {
+            "event": "Moo Music",
+            "location": "Main Hall",
+            "time": "09:30 - 12:00",
+            "description" : "lorem",
+            "contact" : "test@gmail.com"
+        }
+    ],
+
+    "Saturday": [
+        {
+            "event": "Dog Training",
+            "location": "Main Hall",
+            "time": "11:00 - 12:00",
+            "description" : "lorem",
+            "contact" : "test@gmail.com"
+        }
+    ]
+}

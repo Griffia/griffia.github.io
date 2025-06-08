@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Standish Methodist Church</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/whatsOnSection.css">
+    <link rel="stylesheet" href="css/churchHall.css">
+</head>
+<body>
+
+    <div id="additional-info-container" class="additional-info-container hidden">
+        <i id="close">✝</i>
+        <p id="description"></p>
+        <b id="contact"></b>
+    </div>
+
+    <header>
+        <img src="images/logo.webp">
+        <h1>Standish Methodist Church</h1>
+    </header>
+
+    <img src="images/Logo_of_the_United_Methodist_Church.svg.png" class="background-logo">
+    <div class="main-content-container">
+        <div class="header-section">
+            <div id="whats-on" class="header-container selected">
+                <h2>What's On</h2>
+            </div>
+            <div id="church-hall" class="header-container">
+                <h2 >Church Hall</h2>
+            </div>
+        </div>
+        <div class="main-content-background">
+            <section id="whats-on-container" class="whats-on-container">
+                <div class="whats-on-center">
+                    <div class="main-image-container">
+                        <img id="image" src="images/church.jpg">
+    
+                        <div class="quote">
+                            <p>"The time is now" </p>
+                            <p>John 1:10</p>
+                        </div>
+    
+                    </div>
+    
+                    <div id="whats-on-schedule-container">
+    
+                    </div>
+                </div>
+    
+            </section> 
+    
+            <section id="church-hall-container" class="hidden">
+    
+            </section>
+        </div>
+    </div>
+
+    <div class="facebook-feed">
+
+    </div>
+
+    <script src="scripts/events.js"></script>
+    <script src="scripts/churchHall.js"></script>
+    <script src="scripts/changeDisplay.js"></script>
+    <script src="scripts/eventListners.js"></script>
+    <script src="scripts/changeImage.js"></script>
+</body>
+</html>
