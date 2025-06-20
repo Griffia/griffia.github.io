@@ -7,18 +7,43 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/whatsOnSection.css">
     <link rel="stylesheet" href="css/churchHall.css">
+    <link rel="icon" type="image/x-icon" href="images/orb_favicon.ico" >
 </head>
 <body>
 
     <div id="additional-info-container" class="additional-info-container hidden">
-        <i id="close">✝</i>
+        <i id="close" class="close">✝</i>
         <p id="description"></p>
         <b id="contact"></b>
     </div>
 
+    <div id="select-month-container" class="hidden">
+        <i id="close" class="close">✝</i>
+        <div class="row">
+            <p class="month" data-value="0">Jan</p>
+            <p class="month" data-value="1">Feb</p>
+            <p class="month" data-value="2">Mar</p>
+            <p class="month" data-value="3">Apr</p>
+        </div>
+        <div class="row">
+            <p class="month" data-value="4">May</p>
+            <p class="month" data-value="5">Jun</p>
+            <p class="month" data-value="6">Jul</p>
+            <p class="month" data-value="7">Aug</p>
+        </div>
+        <div class="row">
+            <p class="month" data-value="8">Sep</p>
+            <p class="month" data-value="9">Oct</p>
+            <p class="month" data-value="10">Nov</p>
+            <p class="month" data-value="11">Dec</p>
+        </div>
+    </div>
+
     <header>
-        <img src="images/logo.webp">
-        <h1>Standish Methodist Church</h1>
+        <div class="logo-container">
+            <img src="images/logo.webp">
+            <h1>Standish Methodist Church</h1>
+        </div>
     </header>
 
     <img src="images/Logo_of_the_United_Methodist_Church.svg.png" class="background-logo">
@@ -31,6 +56,7 @@
                 <h2 >Church Hall</h2>
             </div>
         </div>
+
         <div class="main-content-background">
             <section id="whats-on-container" class="whats-on-container">
                 <div class="whats-on-center">
@@ -39,13 +65,20 @@
     
                         <div class="quote">
                             <p>"The time is now" </p>
-                            <p>John 1:10</p>
+                            <p class="person">John 1:10</p>
                         </div>
     
                     </div>
     
                     <div id="whats-on-schedule-container">
-    
+                        <div class="change-month-container">
+                            <img id="previous" class="change-month" src="icons/angle-left-solid.svg"></img>
+                            <h2 id="current-month"></h2>
+                            <img id="next" class="change-month" src="icons/angle-right-solid.svg"></img>
+                        </div>
+                        <div id="events-container">
+                            
+                        </div>
                     </div>
                 </div>
     
@@ -66,5 +99,6 @@
     <script src="scripts/changeDisplay.js"></script>
     <script src="scripts/eventListners.js"></script>
     <script src="scripts/changeImage.js"></script>
+    <script src="scripts/changeMonth.js"></script>
 </body>
 </html>

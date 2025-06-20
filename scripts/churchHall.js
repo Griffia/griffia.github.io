@@ -2,13 +2,15 @@ const churchHallContainer = document.getElementById("church-hall-container");
 
 const hallEvents = new XMLHttpRequest();
 
-const days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+const days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
 const additionalInfo = document.getElementById("additional-info-container");
 
 hallEvents.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
         let response = JSON.parse(hallEvents.responseText);
+
+        console.log(this.responseText);
 
         for (let i = 0; i < days.length; i++) {
 
@@ -30,7 +32,6 @@ hallEvents.onreadystatechange = function() {
 
             response[day].forEach(info => {
 
-                let rowContainer = document.createElement("div");
                 let event = document.createElement("div");
                 let eventTitle = document.createElement("h3");
                 let eventLocation = document.createElement("h4");

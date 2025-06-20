@@ -1,10 +1,10 @@
-const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
 let date = new Date();
 
 let currentMonth = months[date.getMonth()];
 
-const whatsOnSchedule = document.getElementById("whats-on-schedule-container");
+const eventsContainer = document.getElementById("events-container");
 
 const eventInfoContainer = document.getElementById("event-info-container");
 
@@ -40,7 +40,7 @@ events.onreadystatechange = function() {
             eventDetails.append(eventName);
             eventDetails.append(eventTime);
             eventContainer.append(eventDetails);
-            whatsOnSchedule.append(eventContainer);
+            eventsContainer.append(eventContainer);
         });
 
     }

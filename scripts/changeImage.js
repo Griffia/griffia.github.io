@@ -3,7 +3,6 @@ const images = [
     "images\\stained-glass.jpg",
     "images\\inside-church.jpg",
     "images\\garden.jpg"
-
 ]
 
 let i = 1;

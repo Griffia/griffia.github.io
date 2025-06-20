@@ -28,6 +28,12 @@
     text-align: center;
     line-height: 24px;
     user-select: none;
+    color: white;
+    font-weight: bold;
+}
+
+.quote .person {
+    font-weight: lighter;
 }
 
 #whats-on-schedule-container {
@@ -36,7 +42,40 @@
     margin: 10px 30px;
 }
 
+.change-month-container {
+    display: flex;
+    margin: 10px 0px;
+    text-align: center;
+    user-select: none;
+}
+
+.change-month {
+    width: 20px;
+    filter: grayscale(100%) invert(100%);
+}
+
+.change-month:hover {
+    filter: grayscale(100%) invert(0%);
+    user-select: none;
+    cursor: pointer;
+}
+
+#current-month {
+    width: 200px;
+    color: white;
+}
+
+#current-month:hover {
+    color: black;
+    cursor: pointer;
+}
+
 /* Events styling */
+#events-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
 
 .event {
     display: flex;
