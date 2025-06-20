@@ -44,6 +44,7 @@ body {
     cursor: pointer;
     color: var(--background-colour-one);
 }
+
 #description {
     padding: 5px;
 }
@@ -104,6 +105,48 @@ body {
     cursor: pointer;
     color: black;
 }
+#contact-us {
+    height: 100%;
+    width: fit-content;
+}
+
+#contact-us-pop-up {
+    position: absolute;
+    right: 0px;
+    top: 60px;
+    background-color: white;
+    width: 300px;
+    /* border: 3px solid var(--background-colour-one); */
+    border-bottom: 3px solid var(--background-colour-one);
+    border-left: 3px solid var(--background-colour-one);
+    border-bottom-left-radius: 5px;
+    text-align: center;
+    z-index: 1;
+}
+
+#contact-us-pop-up p:nth-child(2n) {
+    font-weight: bold;
+}
+
+#contact-us-pop-up p:nth-child(2n-1) {
+    margin-top: 10px;
+}
+
+#contact-us-pop-up p:nth-child(2n):hover {
+    user-select: none;
+    cursor: pointer;
+    text-decoration: underline;
+    color: blue;
+}
+
+#contact-us-pop-up p:last-child {
+    margin-bottom: 10px;
+}
+
+#contact-us-pop-up p {
+    margin-left: 20px;
+}
+
 
 /* Header */
 header {
@@ -114,6 +157,7 @@ header {
     /* background: var(--background-colour-two); */
     color: black;
     user-select: none;
+    border-bottom: 3px solid var(--background-colour-one);
 }
 
 header img {
@@ -124,7 +168,13 @@ header img {
 
 .logo-container {
     display: flex;
-    margin: 10px 0px 0px 30px;
+    margin: 10px 0px 0px 10px;
+}
+
+header h2 {
+    position: absolute;
+    top: 15px;
+    right: 10px;
 }
 
 /* Background logo */
@@ -158,12 +208,7 @@ header img {
     color: white;
 }
 
-.header-container.selected :hover {
-    cursor: pointer;
-    color: black;
-}
-
-.header-container :hover {
+.header-container:hover:not(.selected) {
     cursor: pointer;
     color: var(--background-colour-one);
 }
@@ -176,11 +221,25 @@ header img {
     animation: fade 0.5s;
 }
 
+.dropDown {
+    animation: dropDown 0.5s;
+}
+
 @keyframes fade {
     0% {
         opacity: 0%;
     }
     100% {
         opacity: 100%;
+    }
+}
+
+@keyframes dropDown {
+    0% {
+        transform: translateY(-10%);
+    }
+
+    100% {
+        transform: translateY(0%);
     }
 }

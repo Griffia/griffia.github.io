@@ -1,12 +1,3 @@
-const closeInfo = document.getElementById("close");
-
-// closeInfo.addEventListener("click", (e) => {
-//     // console.log(additionalInfo.style.display);
-//     // console.log(e.currentTarget);
-//     additionalInfo.classList.add("hidden");
-// });
-
-
 const closeInformation = document.querySelectorAll(".close");
 
 closeInformation.forEach((closeElement) => {
@@ -15,4 +6,38 @@ closeInformation.forEach((closeElement) => {
             e.currentTarget.parentElement.classList.add("hidden");
         }
     })
+});
+
+
+const contactUs = document.getElementById("contact-us");
+const contactUsPopUp = document.getElementById("contact-us-pop-up");
+
+
+const hideContactPopUp = () => {
+    contactUsPopUp.classList.toggle("hidden");
+    contactUsPopUp.classList.toggle("dropDown");
+}
+
+contactUs.addEventListener("mouseover", () => {
+    hideContactPopUp();
 })
+
+contactUsPopUp.addEventListener("mouseleave", (e) => {
+    hideContactPopUp();
+})
+
+const copyToClipBoard = () => {
+    const getInfo = document.getElementById("copy-info");
+    navigator.clipboard.writeText(getInfo.innerText);
+}
+
+const contactInfo = document.getElementsByClassName("contact-info");
+// console.log(contactInfo);
+
+for (let i = 0; i <contactInfo.length; i++) {
+    contactInfo[i].addEventListener("click", (e) => {
+        console.log("clicked");
+        console.log(e.target.innerText);
+        navigator.clipboard.writeText(e.target.innerText);
+    })
+}

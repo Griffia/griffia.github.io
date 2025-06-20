@@ -11,6 +11,7 @@ const switchImage = () => {
     const image = document.getElementById("image");
     image.src = images[i];
     image.classList.remove("slide-and-fade");
+    //Allows for the animtation to repeat
     image.offsetWidth;
     image.classList.add("slide-and-fade");
 
@@ -19,7 +20,6 @@ const switchImage = () => {
     } else {
         i = 0;
     }
-
 }
 
 window.onload = function() {

@@ -8,15 +8,16 @@ const eventsContainer = document.getElementById("events-container");
 
 const eventInfoContainer = document.getElementById("event-info-container");
 
-const events = new XMLHttpRequest();
+const churchEvents = new XMLHttpRequest();
 
-events.onreadystatechange = function() {
+churchEvents.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
         
-        let response = JSON.parse(events.responseText);
+        let response = JSON.parse(churchEvents.responseText);
 
         response[currentMonth].forEach(event => {
 
+            //Creates elements
             let eventContainer = document.createElement("div");
             let eventDetails = document.createElement("div");
             let eventDate = document.createElement("h3");
@@ -30,24 +31,26 @@ events.onreadystatechange = function() {
             eventContainer.classList.add("event");
             eventDetails.classList.add("event-details");
 
-            //Applying the info from JSON to screen
+            //Applying the info from JSON to elements
             eventDate.innerText = event.date;
             eventName.innerText = event["event-name"];
             eventTime.innerText = event.time;
 
-            //Adds each event card to DOM
+            //Combines all parts for each event
             eventContainer.append(eventDate);
             eventDetails.append(eventName);
             eventDetails.append(eventTime);
             eventContainer.append(eventDetails);
+
+            //Adds each event card to DOM
             eventsContainer.append(eventContainer);
         });
 
     }
 };
 
-events.open("GET", "events/events.json", true);
-events.send();
+churchEvents.open("GET", "events/events.json", true);
+churchEvents.send();
 
 // document.addEventListener("mousemove", function(event) {
 //     const x = event.clientX;

@@ -10,8 +10,6 @@ hallEvents.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
         let response = JSON.parse(hallEvents.responseText);
 
-        console.log(this.responseText);
-
         for (let i = 0; i < days.length; i++) {
 
             let day = days[i];
@@ -31,7 +29,7 @@ hallEvents.onreadystatechange = function() {
             row.append(dayOfWeek);
 
             response[day].forEach(info => {
-
+                //Creates elements
                 let event = document.createElement("div");
                 let eventTitle = document.createElement("h3");
                 let eventLocation = document.createElement("h4");
@@ -52,9 +50,6 @@ hallEvents.onreadystatechange = function() {
                 event.append(eventLocation);
                 event.append(eventTime);
 
-                //Append to the row
-                // rowContainer.append(event);
-
                 //Appending row to container
                 row.append(event);
 
@@ -72,8 +67,6 @@ hallEvents.onreadystatechange = function() {
 
                     description.innerText = e.currentTarget.getAttribute("data-description");
                     contact.innerText = e.currentTarget.getAttribute("data-contact");
-                    
-
                 });
 
             });

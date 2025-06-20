@@ -5,12 +5,7 @@
             "event-name": "Sunday Service",
             "time": "10:30",
             "service-info": "test"
-        },
-        {
-            "date": "08",
-            "event-name": "Sunday Service",
-            "time": "10:30"
-        },        
+        },   
         {
             "date": "15",
             "event-name": "Sunday Service",
@@ -28,11 +23,6 @@
         }
     ],
     "February": [
-        {
-            "date": "01",
-            "event-name": "Sunday Service",
-            "time": "10:30"
-        },
         {
             "date": "08",
             "event-name": "Sunday Service",
@@ -67,11 +57,6 @@
             "time": "10:30"
         },        
         {
-            "date": "16",
-            "event-name": "Sunday Service",
-            "time": "10:30"
-        },
-        {
             "date": "23",
             "event-name": "Sunday Service",
             "time": "10:30"
@@ -83,22 +68,6 @@
         }
     ],
     "April": [
-        {
-            "date": "02",
-            "event-name": "Sunday Service",
-            "time": "10:30",
-            "info": "this is a text"
-        },
-        {
-            "date": "09",
-            "event-name": "Sunday Service",
-            "time": "10:30"
-        },        
-        {
-            "date": "16",
-            "event-name": "Sunday Service",
-            "time": "10:30"
-        },
         {
             "date": "23",
             "event-name": "Sunday Service",
@@ -126,16 +95,6 @@
             "date": "16",
             "event-name": "Sunday Service",
             "time": "10:30"
-        },
-        {
-            "date": "23",
-            "event-name": "Sunday Service",
-            "time": "10:30"
-        },
-        {
-            "date": "30",
-            "event-name": "Sunday Service",
-            "time": "10:30"
         }
     ],
     "June": [
@@ -149,40 +108,9 @@
             "date": "08",
             "event-name": "Sunday Service",
             "time": "10:30"
-        },        
-        {
-            "date": "15",
-            "event-name": "Sunday Service",
-            "time": "10:30"
-        },
-        {
-            "date": "22",
-            "event-name": "Sunday Service",
-            "time": "10:30"
-        },
-        {
-            "date": "29",
-            "event-name": "Sunday Service",
-            "time": "10:30"
         }
     ],
     "July": [
-        {
-            "date": "06",
-            "event-name": "Sunday Service",
-            "time": "10:30",
-            "info": "this is a text"
-        },
-        {
-            "date": "13",
-            "event-name": "Sunday Service",
-            "time": "10:30"
-        },        
-        {
-            "date": "20",
-            "event-name": "Sunday Service",
-            "time": "10:30"
-        },
         {
             "date": "27",
             "event-name": "Sunday Service",
@@ -190,22 +118,6 @@
         }
     ],
     "August": [
-        {
-            "date": "02",
-            "event-name": "Sunday Service",
-            "time": "10:30",
-            "info": "this is a text"
-        },
-        {
-            "date": "09",
-            "event-name": "Sunday Service",
-            "time": "10:30"
-        },        
-        {
-            "date": "16",
-            "event-name": "Sunday Service",
-            "time": "10:30"
-        },
         {
             "date": "23",
             "event-name": "Sunday Service",
@@ -230,38 +142,12 @@
             "time": "10:30"
         },        
         {
-            "date": "16",
-            "event-name": "Sunday Service",
-            "time": "10:30"
-        },
-        {
-            "date": "23",
-            "event-name": "Sunday Service",
-            "time": "10:30"
-        },
-        {
             "date": "30",
             "event-name": "Sunday Service",
             "time": "10:30"
         }
     ],
     "October": [
-        {
-            "date": "02",
-            "event-name": "Sunday Service",
-            "time": "10:30",
-            "info": "this is a text"
-        },
-        {
-            "date": "09",
-            "event-name": "Sunday Service",
-            "time": "10:30"
-        },        
-        {
-            "date": "16",
-            "event-name": "Sunday Service",
-            "time": "10:30"
-        },
         {
             "date": "23",
             "event-name": "Sunday Service",
@@ -275,27 +161,6 @@
     ],
     "November": [
         {
-            "date": "02",
-            "event-name": "Sunday Service",
-            "time": "10:30",
-            "info": "this is a text"
-        },
-        {
-            "date": "09",
-            "event-name": "Sunday Service",
-            "time": "10:30"
-        },        
-        {
-            "date": "16",
-            "event-name": "Sunday Service",
-            "time": "10:30"
-        },
-        {
-            "date": "23",
-            "event-name": "Sunday Service",
-            "time": "10:30"
-        },
-        {
             "date": "30",
             "event-name": "Sunday Service",
             "time": "10:30"
@@ -307,26 +172,6 @@
             "event-name": "Sunday Service",
             "time": "10:30",
             "info": "this is a text"
-        },
-        {
-            "date": "09",
-            "event-name": "Sunday Service",
-            "time": "10:30"
-        },        
-        {
-            "date": "16",
-            "event-name": "Sunday Service",
-            "time": "10:30"
-        },
-        {
-            "date": "23",
-            "event-name": "Sunday Service",
-            "time": "10:30"
-        },
-        {
-            "date": "30",
-            "event-name": "Sunday Service",
-            "time": "10:30"
         }
     ]
 }

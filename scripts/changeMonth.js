@@ -22,7 +22,7 @@ const changeEventsInfo = () => {
         
         if (this.readyState == 4 && this.status == 200) {
             
-            let response = JSON.parse(events.responseText);
+            let response = JSON.parse(churchEvents.responseText);
 
             response[months[month]].forEach(event => {
 

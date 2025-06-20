@@ -10,7 +10,7 @@ whatsOn.addEventListener("click", () => {
         //Hides the church hall info
         churchContainer.classList.add("hidden");
 
-        //Unhides the whats on info
+        //Unhides the what's on info
         whatsOnContainer.classList.remove("hidden")
 
         //Adds the styling to the headers
